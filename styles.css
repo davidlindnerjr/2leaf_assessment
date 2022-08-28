@@ -1,1 +1,147 @@
-/* Write CSS rules here: */
+* {
+  margin: 0;
+  padding: 0;
+  border-style: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* MAIN */
+
+.hero-image {
+  background-image: url("./assets/banner_image_1.png");
+  height: 80vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main-subtitle {
+  margin: 10px 0px 20px 0px;
+}
+
+.hero-button {
+  background-color: #ff9900;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  border: 0px solid #ff9900;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  height: 600px;
+  width: 600px;
+}
+
+/* INFO */
+
+.info-section {
+  background-color: #151515;
+  width: 100vw;
+  height: 70vh;
+}
+
+.coach-info-section {
+  background-color: #151515;
+  width: 100vw;
+  height: 100vh;
+}
+
+.info-title {
+  font-family: "Alfa Slab One", cursive;
+  color: #ff9900;
+  font-size: 48px;
+}
+
+.seperator {
+  background-color: #ff9900;
+  width: 65vh;
+  height: 1px;
+}
+
+.info-subtitle {
+  color: #f5f5f5;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.director-title {
+  color: #ff9900;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.director-subtitle {
+  color: #151515;
+  line-height: 33px;
+  font-size: 24px;
+}
+
+.director-passage {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #151515;
+}
+
+/* FOOTER */
+
+.thank-you-image {
+  background-image: url("./assets/footer_image.png");
+  height: 50vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.stay-updated-form-container {
+  height: 50vh;
+  width: 100vw;
+  background-color: #151515;
+}
+
+.thank-you-title {
+  font-family: "Alfa Slab One", cursive;
+  color: #ff9900;
+  font-size: 32px;
+}
+
+.form-input {
+  width: 30vw;
+  padding: 15px 20px 15px 20px;
+}
+
+.sign-up-button {
+  background-color: #ff9900;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  border: 0px solid #ff9900;
+  width: 32vw;
+  padding: 15px 20px 15px 20px;
+}
