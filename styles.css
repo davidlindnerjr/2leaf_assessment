@@ -28,52 +28,30 @@
   border: 0px solid #ff9900;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  align-items: center;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
 .center {
   justify-content: center;
   align-items: center;
 }
 
+.start {
+  justify-content: center;
+  align-items: start;
+}
+
 .card {
   background-color: white;
-  height: 600px;
-  width: 600px;
 }
 
 /* INFO */
 
 .info-section {
   background-color: #151515;
-  width: 100vw;
-  height: 70vh;
-}
-
-.coach-info-section {
-  background-color: #151515;
-  width: 100vw;
-  height: 100vh;
 }
 
 .info-title {
   font-family: "Alfa Slab One", cursive;
   color: #ff9900;
-  font-size: 48px;
+  font-size: 32px;
 }
 
 .seperator {
@@ -102,7 +80,7 @@
 }
 
 .director-passage {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 22px;
   color: #151515;
@@ -112,7 +90,6 @@
 
 .thank-you-image {
   background-image: url("./assets/footer_image.png");
-  height: 50vh;
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
@@ -121,7 +98,6 @@
 }
 
 .stay-updated-form-container {
-  height: 50vh;
   width: 100vw;
   background-color: #151515;
 }
@@ -133,7 +109,6 @@
 }
 
 .form-input {
-  width: 30vw;
   padding: 15px 20px 15px 20px;
 }
 
@@ -145,3 +120,5 @@
   width: 32vw;
   padding: 15px 20px 15px 20px;
 }
+
+/* Make it mobile responsive with Bootstrap ad do the rest of the css in plain CSS */
