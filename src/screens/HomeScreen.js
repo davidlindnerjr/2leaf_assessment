@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+
 // Components
 import Modal from '../components/Modal';
 import Footer from '../components/Footer';
+import HeroSlider from '../components/HeroSlider';
 
 // Assets
 import levelUp from "../assets/level_up_logo.png";
@@ -21,18 +23,7 @@ const HomeScreen = () => {
 
     return (
         <>
-            <div className="hero-image">
-                <div className="container">
-                    <div className="row text-center">
-                        <div className="col-sm-6 col-md-6" style={{ padding: "20px"}}>
-                            <img src={levelUp} alt={levelUp}/>
-                        </div>
-                        <div className="col-sm-6 col-md-6" style={{ padding: "40px" }}>
-                            <button onClick={() => setDisplayModal('block') } className="hero-button">{'Parent Portal >'}</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           <HeroSlider closeModal={closeModal} setDisplayModal={setDisplayModal}/>
 
             <div className="container">
                 <div className="row main-subtitle text-center">
@@ -202,7 +193,7 @@ const HomeScreen = () => {
                     </div>
                 </div>
             </div>
-            <Modal closeModal={closeModal} display={displayModal}/>
+            <Modal setDisplayModal={setDisplayModal} closeModal={closeModal} display={displayModal}/>
             <Footer />
         </>
     )

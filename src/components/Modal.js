@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
+import $ from 'jquery';
 
-const Modal = ({ display, closeModal }) => {
+const Modal = ({setDisplayModal, display, closeModal }) => {
     const [password, setPassword] = useState('');
+    const [isMobile, setIsMobile] = useState(false);
+
     const navigate = useNavigate();
 
     const checkPassword = () => {
@@ -13,9 +16,30 @@ const Modal = ({ display, closeModal }) => {
         }
     }
 
+    const handleResize = () => {
+        if (window.innerWidth < 720) {
+            setIsMobile(true)
+        } else {
+            setIsMobile(false)
+        }
+    }
+
+    useEffect(() => {
+        handleResize();
+    }, [])
+
+
+    let modal = document.querySelector(".modal");
+
+    $(window).on('click', (e) => {
+        if(e.target === modal){
+            setDisplayModal('none');
+        }
+    });
+
     return (
         <div className="modal" style={{ display: display }}>
-            <div className="modal-content">
+            <div className="modal-content" style={isMobile ? { width: '80%' } : { width: '40%' }}>
                 <span className="close-btn" onClick={closeModal}>&times;</span>
                 <div className="container text-center">
                     <form>
