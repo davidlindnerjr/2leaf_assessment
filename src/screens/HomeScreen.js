@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import $ from 'jquery';
-
 // Components
 import Modal from '../components/Modal';
+import Footer from '../components/Footer';
 
 // Assets
 import levelUp from "../assets/level_up_logo.png";
@@ -26,7 +25,7 @@ const HomeScreen = () => {
                 <div className="container">
                     <div className="row text-center">
                         <div className="col-sm-6 col-md-6" style={{ padding: "20px"}}>
-                            <img src={levelUp}/>
+                            <img src={levelUp} alt={levelUp}/>
                         </div>
                         <div className="col-sm-6 col-md-6" style={{ padding: "40px" }}>
                             <button onClick={() => setDisplayModal('block') } className="hero-button">{'Parent Portal >'}</button>
@@ -43,10 +42,10 @@ const HomeScreen = () => {
                 </div>
                 <div className="row text-center" style={{ marginBottom: "50px"}}>
                     <div className="col-6">
-                        <img src={levelUp}/>
+                        <img src={levelUp} alt={levelUp}/>
                     </div>
                     <div className="col-6">
-                        <img src={levelUpStar}/>
+                        <img src={levelUpStar} alt={levelUpStar}/>
                     </div>
                 </div>
             </div>
@@ -204,6 +203,7 @@ const HomeScreen = () => {
                 </div>
             </div>
             <Modal closeModal={closeModal} display={displayModal}/>
+            <Footer />
         </>
     )
 }
