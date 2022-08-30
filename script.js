@@ -1,3 +1,5 @@
+import { db } from '/config.js';
+
 // CAROUSEL
 let images = ['./assets/banner_image_1.png', './assets/banner_image_2.png'];
 let nextimage = 0;
@@ -51,4 +53,30 @@ $("#passwordBtn").on('click', (e) => {
     } else {
         alert('Incorrect Password');
     }
+});
+
+// Firebase back end
+const mailListRef = collection(db, 'mailList');
+
+const addToMailList = async () => {
+
+    try {
+        await addDoc(mailListRef, {
+            username: username,
+            email: email,
+        })
+
+    } catch (err) {
+        alert('Incorrect data. Try adding name and email again.')
+    }
+
+}
+
+$("#emailBtn").on('click', (e) => {
+    e.preventDefault();
+    let name = $("#nameInput").val();
+    let email = $("emailInput").val();
+
+    console.log(name)
+    console.log(email)
 });

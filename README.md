@@ -1,44 +1,70 @@
-# README #
+# Getting Started with Create React App
 
-Hello! If you're reading this, it means that you have moved on your coding assessment with 2Leaf.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## How do I get set up? ##
+## Available Scripts
 
-* Clone this repository to your local environment
-* Follow the instructions and guidelines to the best of your abilities
-* Do as much as you can within your time limit
+In the project directory, you can run:
 
-## Assessment ##
+### `npm start`
 
-For this assessment, you will be asked to code a simple HTML landing page based on one of our designs.
-You will be provided with the following:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-* This repository, which includes a blank html, css, and javascript file where you will write your code. 
-* A design file using Figma, an online web development software we use for designs
-* [Figma File](https://www.figma.com/file/5l22ti4pFgFKSnlA93ouM7/branch/bWXSVeZJBLDgog0ysvTWGT/LevelUp?node-id=22%3A3)
-* An assets folder containing all of the images that are used in the design file, for your convenience.
-* Also included in the assets folder is a minified copy of jQuery, which will be the only additional library you should use for this website.
-* You should have all of the required assets you need for this project other than the font files, which have been purposely excluded but can be found [here](https://fonts.google.com/specimen/Open+Sans) and [here](https://fonts.google.com/specimen/Alfa+Slab+One)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Instructions ###
+### `npm test`
 
-You have until your deadline to complete however much of the following you can:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-1. Git test: Clone this repo. Use commits to show your work.
-2. HTML/CSS Test: Code only the landing page (the one with the two children playing basketball in the header). If you have extra time, you can code the secondary Parent Portal page as well.
-3. Javascript/jQuery Test: 1) Make it so that the header slides right every 5 seconds to reveal the alternate header (the picture of the children on the beach). 2) Create a modal popup that stickies to the center of the screen, prompting users to "Please enter your password". The modal should be toggleable by clicking outside of the modal, or in the X in the top left corner.
-4. Mobile responsive test: The page should be mobile responsive and look appropriate on desktop, phone, and tablets.
-5. Back-end Test: Allow only approved users with the password access to the Parent Portal page (as a reminder, this page does not need to be coded unless you have extra time). Use Node.js, PHP, or another backend language of your choice. Include instructions on how to run your code.
-6. Database Test: Add back-end functionality for the "Stay updated" mailing list. Emails should be saved into some kind of database (Mongo DB, MySQL, text file, or other). Bonus points for sending a confirmation email.
-7. Done? Upload to a personal Github/Bitbucket repo and share that link with us, or ZIP your code (including .git folder and any .env) and share it with us. Bonus point if you also deploy to a live website.
+### `npm run build`
 
-## Guidelines ##
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-* Complete the assessment on time.
-* Use good coding practices.
-* Showcase your skills: We are purposefully leaving the requirements basic to allow you freedom to showcase your abilities and make it as complex as you would like.
-* Please refrain from using styling libraries like Bootstrap or Tailwind, although if you feel them necessary to include, we'd rather see that than nothing.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-#### Questions? ####
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-If you have any questions about what is being asked of you for this project, please contact us before the due date.
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
